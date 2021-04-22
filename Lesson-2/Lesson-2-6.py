@@ -36,9 +36,8 @@ scan_dict = {"название": scan_name, "цена": scan_price, "колич�
 computer_tuple = (1, computer_dict)
 printer_tuple = (2, printer_dict)
 scan_tuple = (3, scan_dict)
-print(computer_tuple)
-print(printer_tuple)
-print(scan_tuple)
+tuple_list = [computer_tuple, printer_tuple, scan_tuple]
+print('\n'.join(map(str, tuple_list)))
 
 category_name = [computer_dict["название"], printer_dict["название"], scan_dict["название"]]
 category_price = [computer_dict["цена"], printer_dict["цена"], scan_dict["цена"]]
