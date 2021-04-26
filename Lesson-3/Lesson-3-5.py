@@ -12,13 +12,15 @@ def my_sum(arg):
 
 
 while True:
-    number_str = input("Веедите несколько чисел через пробел: ")
+    number_str = input("Веедите несколько чисел через пробел. Для завершения введите букву s: ")
     my_list = number_str.split()
     my_symbol = my_list[-1]
 
-    if my_symbol.isdigit():
-        my_sum(my_list)
-    else:
-        my_list.pop()
+    if "s" in my_list:
+        stop_word = my_list.index("s")
+        del my_list[stop_word:]
         my_sum(my_list)
         break
+    else:
+        my_symbol.isdigit()
+        my_sum(my_list)
