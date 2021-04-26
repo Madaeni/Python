@@ -22,5 +22,4 @@ while True:
         my_sum(my_list)
         break
     else:
-        my_symbol.isdigit()
         my_sum(my_list)
